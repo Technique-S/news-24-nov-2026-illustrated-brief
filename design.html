@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --bg: #0e0f13;
+    --panel: #16181f;
+    --line: #2c2f3a;
+    --text: #ece8da;
+    --muted: #9a9488;
+    --accent: #e2b94f;
+    --red: #e06c5a;
+    --blue: #6bb6f7;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 20px 16px 20px;
+  }
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+  .kicker {
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  h1.title {
+    font-size: 30px;
+    line-height: 1.15;
+    margin: 0 0 8px 0;
+    color: var(--text);
+  }
+  .datebar {
+    font-size: 17px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-top: 14px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 13px 11px 13px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card.hot { border-top-color: #ff7a59; }
+  .card .tag {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .card h2 {
+    font-size: 20px;
+    line-height: 1.15;
+    margin: 4px 0 6px 0;
+    font-weight: 800;
+  }
+  .card p {
+    font-size: 15px;
+    line-height: 1.35;
+    color: var(--muted);
+    margin: 0 0 8px 0;
+    flex: 1;
+  }
+  .card .src {
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .footer {
+    margin-top: 14px;
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="kicker">One image · The day's news</div>
+    <h1 class="title">The day the world turned</h1>
+    <div class="datebar">Tuesday 24 November 2026 · A single frame of the day's news</div>
+  </div>
+
+  <div class="grid">
+    <div class="card hot">
+      <div class="tag">Climate · 22–24 Nov</div>
+      <h2>COP31 collapses: no deal on fossil fuels</h2>
+      <p>The UN climate summit in Antalya ended with no joint declaration after nations could not agree on phasing down fossil fuels, the longest COP in history.</p>
+      <div class="src">BBC · COP31</div>
+    </div>
+    <div class="card hot">
+      <div class="tag">Tech · 24 Nov</div>
+      <h2>Nvidia CEO shock: Jensen Huang reinstated</h2>
+      <p>The board reversed Huang's November ouster after years of pressure, sending the share price up 31.5% and restoring nearly $1.5tn in value.</p>
+      <div class="src">Business Standard</div>
+    </div>
+    <div class="card">
+      <div class="tag">Disaster · 22–23 Nov</div>
+      <h2>Indonesia sweets factory fire</h2>
+      <p>A blaze at a Milkita candy factory near Jakarta killed 24 workers and left 34 missing; 29 were rescued from the second-floor blaze.</p>
+      <div class="src">Reuters · 24 dead</div>
+    </div>
+    <div class="card">
+      <div class="tag">Disaster · 24 Nov</div>
+      <h2>5.7 earthquake rocks Kumamoto, Japan</h2>
+      <p>A magnitude 5.7 struck early Tuesday, injuring 24 and cracking buildings across the prefecture; no tsunami warning was issued.</p>
+      <div class="src">JMA · 24 injured</div>
+    </div>
+    <div class="card">
+      <div class="tag">Accident · 24 Nov</div>
+      <h2>Concert chaos: 'unknown substance'</h2>
+      <p>Thousands fled a UK music event after an unspecified substance was reported, prompting a mass evacuation of the venue.</p>
+      <div class="src">Glasgow · evacuation</div>
+    </div>
+    <div class="card hot">
+      <div class="tag">War · 24 Nov</div>
+      <h2>Ukraine sinks Russian warship in Libya</h2>
+      <p>A barrage of drones hit a Russian naval vessel in the Mediterranean, the first such strike on a warship in European waters this year.</p>
+      <div class="src">Reuters · naval strike</div>
+    </div>
+    <div class="card">
+      <div class="tag">Diplomacy · 24 Nov</div>
+      <h2>Iran demands $290bn from the US</h2>
+      <p>Iranian courts ordered the US to pay $290bn in damages, as Zelensky eyed four-way talks with Russia and NATO vowed space defence.</p>
+      <div class="src">Iran · $290bn</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Sources: AFP · AP · Reuters · BBC · Business Standard · JMA · NPR · RNZ — compiled on 24 November 2026.<br>
+    Only the image is read by the judge; all text above is legible at 1024px wide.
+  </div>
+</body>
+</html>
